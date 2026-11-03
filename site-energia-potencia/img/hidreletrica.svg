@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" font-family="Segoe UI, Arial, sans-serif">
+  <title>Usina hidrelétrica: transformações de energia</title>
+  <style>
+    .onda { animation: onda 3s linear infinite; }
+    .agua-duto { animation: fluxo 0.6s linear infinite; }
+    .turbina { transform-box: view-box; transform-origin: 320px 275px; animation: girar 1.2s linear infinite; }
+    .rio { animation: fluxo-rio 1.5s linear infinite; }
+    .eletricidade { animation: fluxo-eletrico 0.8s linear infinite; }
+    .raio { animation: piscar 1.2s ease-in-out infinite; }
+    .sol { transform-box: view-box; transform-origin: 530px 55px; animation: pulsar 4s ease-in-out infinite; }
+    .gerador-luz { animation: piscar 0.8s ease-in-out infinite; }
+    @keyframes onda { from { transform: translateX(0); } to { transform: translateX(-40px); } }
+    @keyframes fluxo { to { stroke-dashoffset: -32; } }
+    @keyframes fluxo-rio { to { stroke-dashoffset: -40; } }
+    @keyframes fluxo-eletrico { to { stroke-dashoffset: -24; } }
+    @keyframes girar { to { transform: rotate(360deg); } }
+    @keyframes piscar { 0%, 100% { opacity: 1; } 50% { opacity: 0.2; } }
+    @keyframes pulsar { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.12); } }
+  </style>
+  <defs>
+    <clipPath id="clip-reservatorio"><rect x="0" y="95" width="190" height="30"/></clipPath>
+  </defs>
+  <!-- céu -->
+  <rect width="600" height="380" rx="16" fill="#e6f1ff"/>
+  <circle class="sol" cx="530" cy="55" r="28" fill="#fcd34d"/>
+  <!-- chão -->
+  <rect x="0" y="300" width="600" height="80" fill="#9ccc65"/>
+  <!-- reservatório -->
+  <path d="M0,110 L190,110 L190,300 L0,300 Z" fill="#3b82f6"/>
+  <g clip-path="url(#clip-reservatorio)">
+    <path class="onda" d="M0,110 q20,-8 40,0 t40,0 t40,0 t40,0 t40,0 t40,0" fill="none" stroke="#bfdbfe" stroke-width="3"/>
+  </g>
+  <text x="18" y="150" fill="#fff" font-size="15" font-weight="700">Reservatório</text>
+  <text x="18" y="170" fill="#e0ecff" font-size="13">água no alto</text>
+  <!-- barragem -->
+  <path d="M190,90 L230,90 L280,300 L190,300 Z" fill="#94a3b8" stroke="#475569" stroke-width="3"/>
+  <!-- duto forçado com água descendo -->
+  <path d="M195,200 L300,285" stroke="#1e3a8a" stroke-width="14" stroke-linecap="round"/>
+  <path class="agua-duto" d="M195,200 L300,285" stroke="#60a5fa" stroke-width="6" stroke-linecap="round" stroke-dasharray="8 8"/>
+  <!-- casa de força -->
+  <rect x="285" y="240" width="110" height="60" rx="6" fill="#f1f5f9" stroke="#334155" stroke-width="3"/>
+  <circle cx="320" cy="275" r="17" fill="#fca311" stroke="#14213d" stroke-width="3"/>
+  <path class="turbina" d="M320,258 L320,292 M303,275 L337,275 M308,263 L332,287 M332,263 L308,287" stroke="#14213d" stroke-width="2"/>
+  <rect x="350" y="258" width="34" height="34" rx="4" fill="#14213d"/>
+  <text class="gerador-luz" x="367" y="281" fill="#fca311" font-size="16" font-weight="800" text-anchor="middle">G</text>
+  <!-- rio de saída -->
+  <path d="M395,300 C450,300 480,310 600,310 L600,330 L395,330 Z" fill="#3b82f6"/>
+  <path class="rio" d="M405,318 L590,318" stroke="#bfdbfe" stroke-width="2" stroke-dasharray="14 26" stroke-linecap="round"/>
+  <!-- torre e fios -->
+  <path d="M480,300 L500,140 L520,300 M485,260 L515,260 M490,220 L510,220 M494,180 L506,180" stroke="#334155" stroke-width="3" fill="none"/>
+  <path d="M478,150 L522,150" stroke="#334155" stroke-width="3"/>
+  <path d="M395,250 Q440,190 480,150 M522,150 Q560,170 600,160" stroke="#14213d" stroke-width="2" fill="none"/>
+  <!-- energia elétrica correndo pelos fios -->
+  <path class="eletricidade" d="M395,250 Q440,190 480,150 M522,150 Q560,170 600,160" stroke="#fca311" stroke-width="3" fill="none" stroke-dasharray="6 18" stroke-linecap="round"/>
+  <!-- raio -->
+  <path class="raio" d="M560,190 L548,215 L560,215 L550,240" stroke="#fca311" stroke-width="4" fill="none" stroke-linejoin="round"/>
+  <!-- legenda de transformações -->
+  <rect x="20" y="16" width="440" height="62" rx="10" fill="#14213d"/>
+  <text x="34" y="40" fill="#fca311" font-size="15" font-weight="700">Ep gravitacional → Ec da água → Ec da turbina</text>
+  <text x="34" y="64" fill="#ffffff" font-size="15" font-weight="700">→ energia elétrica (gerador G)</text>
+  <text x="300" y="232" fill="#14213d" font-size="12" font-weight="700">turbina</text>
+  <text x="350" y="232" fill="#14213d" font-size="12" font-weight="700">gerador</text>
+  <text x="440" y="355" fill="#14213d" font-size="12">transmissão</text>
+</svg>

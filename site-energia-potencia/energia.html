@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energia &amp; Potência | Energia</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <div class="conteudo">
+      <a class="logo" href="index.html">⚡ Energia <span>&amp;</span> Potência</a>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a class="ativo" href="energia.html">Energia</a></li>
+          <li><a href="potencia.html">Potência</a></li>
+          <li><a href="exercicios.html">Exercícios</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="bateria"></div>
+  </header>
+
+  <main class="conteudo">
+
+    <section>
+      <span class="etiqueta">Parte 1</span>
+      <h1>Energia mecânica e suas formas</h1>
+      <p>
+        A <strong>energia mecânica</strong> é a energia ligada ao movimento e à posição dos corpos.
+        Ela é a soma de duas parcelas: a <strong>energia cinética</strong> (de movimento) e a
+        <strong>energia potencial</strong> (armazenada pela posição, como a altura).
+      </p>
+      <span class="formula">E<sub>mec</sub> = E<sub>c</sub> + E<sub>p</sub></span>
+    </section>
+
+    <section>
+      <h2>Energia cinética</h2>
+      <p>
+        Todo corpo em movimento possui energia cinética. Ela depende da <strong>massa</strong> e,
+        principalmente, da <strong>velocidade</strong>, que aparece ao quadrado: se a velocidade
+        dobra, a energia cinética fica <strong>quatro vezes</strong> maior.
+      </p>
+      <span class="formula">E<sub>c</sub> = m · v² / 2</span>
+      <ul class="legenda-formula">
+        <li><em>m</em> = massa (kg)</li>
+        <li><em>v</em> = velocidade (m/s)</li>
+        <li><em>E<sub>c</sub></em> = energia cinética (J)</li>
+      </ul>
+      <div class="exemplo">
+        <strong>✏️ Exemplo</strong>
+        Um carro de 1 000 kg anda a 20 m/s (72 km/h).<br>
+        E<sub>c</sub> = 1 000 · 20² / 2 = 1 000 · 400 / 2 = <strong>200 000 J (200 kJ)</strong>.
+      </div>
+      <div class="atencao">
+        <strong>⚠️ Por que a velocidade é tão perigosa no trânsito?</strong>
+        A 40 m/s (144 km/h), o mesmo carro teria 800 000 J — quatro vezes mais energia para
+        ser dissipada em uma colisão.
+      </div>
+    </section>
+
+    <section>
+      <h2>Energia potencial gravitacional</h2>
+      <p>
+        É a energia que um corpo tem por estar a uma certa <strong>altura</strong> em relação
+        a um nível de referência (normalmente o chão).
+      </p>
+      <span class="formula">E<sub>pg</sub> = m · g · h</span>
+      <ul class="legenda-formula">
+        <li><em>m</em> = massa (kg)</li>
+        <li><em>g</em> = aceleração da gravidade (≈ 10 m/s²)</li>
+        <li><em>h</em> = altura (m)</li>
+      </ul>
+      <div class="exemplo">
+        <strong>✏️ Exemplo</strong>
+        Um livro de 2 kg sobre uma estante de 1,5 m:<br>
+        E<sub>pg</sub> = 2 · 10 · 1,5 = <strong>30 J</strong>.
+      </div>
+    </section>
+
+    <section>
+      <h2>Conservação da energia mecânica</h2>
+      <div class="duas-colunas">
+        <div>
+          <p>
+            Quando não há atrito nem resistência do ar (sistema <strong>conservativo</strong>),
+            a energia mecânica se mantém constante: o que se perde de energia potencial se ganha
+            em energia cinética, e vice-versa.
+          </p>
+          <span class="formula">E<sub>c</sub>(A) + E<sub>p</sub>(A) = E<sub>c</sub>(B) + E<sub>p</sub>(B)</span>
+          <p>
+            Na montanha-russa, o carrinho sobe devagar até o ponto mais alto (muita energia
+            potencial) e, ao descer, transforma essa energia em velocidade.
+          </p>
+          <div class="exemplo">
+            <strong>✏️ Exemplo</strong>
+            Uma bola é solta do repouso a 5 m de altura. Com que velocidade chega ao chão?<br>
+            m · g · h = m · v² / 2 → v = √(2 · g · h) = √(2 · 10 · 5) = √100 = <strong>10 m/s</strong>.<br>
+            Repare que a massa se cancela!
+          </div>
+        </div>
+        <figure>
+          <img src="img/montanha-russa.svg" alt="Montanha-russa com o carrinho no ponto mais alto, com energia potencial máxima, e no ponto mais baixo, com energia cinética máxima">
+          <figcaption>No ponto A a energia é quase toda potencial; no ponto B, quase toda cinética.</figcaption>
+        </figure>
+      </div>
+      <div class="curiosidade">
+        <strong>💡 E quando existe atrito?</strong>
+        A energia mecânica diminui, mas a energia total continua conservada: a parte "perdida"
+        vira principalmente <strong>energia térmica</strong> (calor) e som.
+      </div>
+    </section>
+
+    <section>
+      <h2>Trabalho: a energia em trânsito</h2>
+      <p>
+        <strong>Trabalho (τ)</strong> é a energia transferida a um corpo por uma força que o desloca.
+        Também é medido em joules.
+      </p>
+      <span class="formula">τ = F · d · cos θ</span>
+      <ul class="legenda-formula">
+        <li><em>F</em> = força (N)</li>
+        <li><em>d</em> = deslocamento (m)</li>
+        <li><em>θ</em> = ângulo entre a força e o deslocamento</li>
+      </ul>
+      <p>
+        Pelo <strong>Teorema da Energia Cinética</strong>, o trabalho total realizado sobre um
+        corpo é igual à variação da sua energia cinética:
+      </p>
+      <span class="formula">τ<sub>total</sub> = ΔE<sub>c</sub> = E<sub>c,final</sub> − E<sub>c,inicial</sub></span>
+    </section>
+
+    <div class="proxima">
+      <a class="botao secundario" href="index.html">← Início</a>
+      <a class="botao" href="potencia.html">Próximo: Potência →</a>
+    </div>
+
+  </main>
+
+  <footer class="rodape">
+    <p>Projeto Prático — Web Design e Multimídia · 1º ano do Ensino Médio</p>
+    <p>Disciplina de referência: Física — Energia e Potência · Grupo: Matheus Y. Lunelli e Igor A. Fumagalli</p>
+  </footer>
+
+</body>
+</html>

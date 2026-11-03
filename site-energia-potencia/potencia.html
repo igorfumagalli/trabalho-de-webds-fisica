@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energia &amp; Potência | Potência</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <div class="conteudo">
+      <a class="logo" href="index.html">⚡ Energia <span>&amp;</span> Potência</a>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="energia.html">Energia</a></li>
+          <li><a class="ativo" href="potencia.html">Potência</a></li>
+          <li><a href="exercicios.html">Exercícios</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="bateria"></div>
+  </header>
+
+  <main class="conteudo">
+
+    <section>
+      <span class="etiqueta">Parte 2</span>
+      <h1>Potência: a rapidez da energia</h1>
+      <div class="duas-colunas">
+        <div>
+          <p>
+            Duas pessoas sobem a mesma escada carregando a mesma caixa. Elas realizam o
+            <strong>mesmo trabalho</strong>, mas quem sobe mais rápido desenvolve
+            <strong>maior potência</strong>.
+          </p>
+          <p>
+            <strong>Potência</strong> é a grandeza que indica <em>quão rápido</em> a energia é
+            transformada ou o trabalho é realizado.
+          </p>
+          <span class="formula">P = τ / Δt = E / Δt</span>
+          <ul class="legenda-formula">
+            <li><em>P</em> = potência (W, watt)</li>
+            <li><em>τ</em> ou <em>E</em> = trabalho ou energia (J)</li>
+            <li><em>Δt</em> = intervalo de tempo (s)</li>
+          </ul>
+        </div>
+        <figure>
+          <img src="img/lampada-potencia.svg" alt="Duas lâmpadas: uma de 9 watts, que usa 9 joules por segundo, e outra de 60 watts, que usa 60 joules por segundo">
+          <figcaption>1 watt = 1 joule por segundo.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Unidades de potência</h2>
+      <div class="grade">
+        <div class="cartao">
+          <h3>Watt (W)</h3>
+          <p>Unidade do SI. 1 W = 1 J/s. Homenagem a James Watt, que aperfeiçoou a máquina a vapor.</p>
+        </div>
+        <div class="cartao">
+          <h3>Cavalo-vapor (cv)</h3>
+          <p>Usado em motores de carro no Brasil. 1 cv ≈ 735,5 W.</p>
+        </div>
+        <div class="cartao">
+          <h3>Horse-power (hp)</h3>
+          <p>Unidade inglesa, parecida com o cv. 1 hp ≈ 745,7 W.</p>
+        </div>
+      </div>
+      <div class="atencao">
+        <strong>⚠️ Cuidado: kWh não é potência!</strong>
+        O <strong>quilowatt-hora (kWh)</strong> é uma unidade de <em>energia</em>: é a energia
+        consumida por um aparelho de 1 000 W funcionando durante 1 hora.
+        1 kWh = 1 000 W × 3 600 s = <strong>3 600 000 J</strong>.
+      </div>
+    </section>
+
+    <section>
+      <h2>Potência e velocidade</h2>
+      <p>
+        Quando uma força constante move um corpo com velocidade constante na mesma direção,
+        a potência também pode ser calculada assim:
+      </p>
+      <span class="formula">P = F · v</span>
+      <div class="exemplo">
+        <strong>✏️ Exemplo: o elevador</strong>
+        Um elevador ergue uma carga de 500 kg a 20 m de altura em 10 s, com velocidade constante.<br>
+        τ = m · g · h = 500 · 10 · 20 = 100 000 J<br>
+        P = 100 000 / 10 = <strong>10 000 W = 10 kW</strong> (≈ 13,6 cv).
+      </div>
+    </section>
+
+    <section>
+      <h2>Rendimento</h2>
+      <p>
+        Nenhuma máquina aproveita 100% da energia que recebe: parte se perde, principalmente
+        como calor. O <strong>rendimento (η)</strong> indica a fração aproveitada.
+      </p>
+      <span class="formula">η = P<sub>útil</sub> / P<sub>total</sub></span>
+      <div class="exemplo">
+        <strong>✏️ Exemplo</strong>
+        Um motor recebe 2 000 W da rede elétrica e entrega 1 500 W de potência útil.<br>
+        η = 1 500 / 2 000 = 0,75 = <strong>75%</strong>. Os outros 500 W viram calor e ruído.
+      </div>
+    </section>
+
+    <section>
+      <h2>Quanto gasta cada aparelho?</h2>
+      <p>
+        Para saber a energia consumida, basta multiplicar a potência pelo tempo de uso:
+        <strong>E = P · Δt</strong>. Usando a potência em kW e o tempo em horas, o resultado
+        sai direto em kWh, a unidade que aparece na conta de luz.
+      </p>
+      <div class="tabela-container">
+        <table>
+          <caption>
+            Valores aproximados para um mês de 30 dias. Tarifa ilustrativa de R$ 0,80 por kWh —
+            confira o valor real na conta de luz da sua casa.
+          </caption>
+          <thead>
+            <tr>
+              <th>Aparelho</th>
+              <th class="num">Potência (W)</th>
+              <th class="num">Uso por dia</th>
+              <th class="num">Energia por dia (kWh)</th>
+              <th class="num">Energia no mês (kWh)</th>
+              <th class="num">Custo no mês (R$)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Chuveiro elétrico</td>
+              <td class="num">5 500</td>
+              <td class="num">30 min</td>
+              <td class="num">2,75</td>
+              <td class="num">82,5</td>
+              <td class="num">66,00</td>
+            </tr>
+            <tr>
+              <td>Ar-condicionado</td>
+              <td class="num">900</td>
+              <td class="num">8 h</td>
+              <td class="num">7,2</td>
+              <td class="num">216</td>
+              <td class="num">172,80</td>
+            </tr>
+            <tr>
+              <td>Micro-ondas</td>
+              <td class="num">1 200</td>
+              <td class="num">20 min</td>
+              <td class="num">0,4</td>
+              <td class="num">12</td>
+              <td class="num">9,60</td>
+            </tr>
+            <tr>
+              <td>Televisor LED</td>
+              <td class="num">100</td>
+              <td class="num">4 h</td>
+              <td class="num">0,4</td>
+              <td class="num">12</td>
+              <td class="num">9,60</td>
+            </tr>
+            <tr>
+              <td>Notebook</td>
+              <td class="num">65</td>
+              <td class="num">6 h</td>
+              <td class="num">0,39</td>
+              <td class="num">11,7</td>
+              <td class="num">9,36</td>
+            </tr>
+            <tr>
+              <td>Lâmpada LED</td>
+              <td class="num">9</td>
+              <td class="num">5 h</td>
+              <td class="num">0,045</td>
+              <td class="num">1,35</td>
+              <td class="num">1,08</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="4">Total</td>
+              <td class="num">335,55</td>
+              <td class="num">268,44</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <div class="curiosidade">
+        <strong>💡 Repare</strong>
+        O chuveiro tem a maior potência, mas o ar-condicionado gasta mais no mês porque fica
+        ligado por muito mais tempo. O consumo depende da <strong>potência</strong> <em>e</em> do
+        <strong>tempo de uso</strong>.
+      </div>
+      <div class="curiosidade">
+        <strong>🌊 Curiosidade: Itaipu</strong>
+        A usina hidrelétrica de Itaipu, no rio Paraná, tem 20 unidades geradoras de 700 MW,
+        somando 14 000 MW de potência instalada — energia suficiente para abastecer milhões
+        de residências.
+      </div>
+    </section>
+
+    <div class="proxima">
+      <a class="botao secundario" href="energia.html">← Energia</a>
+      <a class="botao" href="exercicios.html">Próximo: Exercícios →</a>
+    </div>
+
+  </main>
+
+  <footer class="rodape">
+    <p>Projeto Prático — Web Design e Multimídia · 1º ano do Ensino Médio</p>
+    <p>Disciplina de referência: Física — Energia e Potência · Grupo: Matheus Y. Lunelli e Igor A. Fumagalli</p>
+  </footer>
+
+</body>
+</html>

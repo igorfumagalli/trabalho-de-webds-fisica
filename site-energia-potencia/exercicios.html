@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energia &amp; Potência | Exercícios</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <div class="conteudo">
+      <a class="logo" href="index.html">⚡ Energia <span>&amp;</span> Potência</a>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="energia.html">Energia</a></li>
+          <li><a href="potencia.html">Potência</a></li>
+          <li><a class="ativo" href="exercicios.html">Exercícios</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="bateria"></div>
+  </header>
+
+  <main class="conteudo">
+
+    <section class="hero">
+      <div>
+        <span class="etiqueta">Parte 3</span>
+        <h1>Hora de praticar!</h1>
+        <p class="lead">
+          Tente resolver cada questão no caderno antes de abrir a resolução.
+          Use <strong>g = 10 m/s²</strong> quando necessário.
+        </p>
+      </div>
+      <figure>
+        <img src="img/pendulo.svg" alt="Pêndulo simples oscilando entre os pontos A e C, passando pelo ponto mais baixo B">
+        <figcaption>O pêndulo: um laboratório de conservação de energia.</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Questões</h2>
+
+      <div class="cartao questao">
+        <span class="nivel facil">Fácil</span>
+        <h3>1. Energia cinética</h3>
+        <p>Uma bicicleta com o ciclista tem massa total de 80 kg e se move a 5 m/s. Qual é a sua energia cinética?</p>
+        <details>
+          <summary>Ver resolução</summary>
+          <p>E<sub>c</sub> = m · v² / 2 = 80 · 5² / 2 = 80 · 25 / 2 = <strong>1 000 J</strong>.</p>
+        </details>
+      </div>
+
+      <div class="cartao questao">
+        <span class="nivel facil">Fácil</span>
+        <h3>2. Energia potencial gravitacional</h3>
+        <p>Um vaso de 3 kg está na sacada de um prédio, a 12 m do chão. Qual é a sua energia potencial gravitacional em relação ao chão?</p>
+        <details>
+          <summary>Ver resolução</summary>
+          <p>E<sub>pg</sub> = m · g · h = 3 · 10 · 12 = <strong>360 J</strong>.</p>
+        </details>
+      </div>
+
+      <div class="cartao questao">
+        <span class="nivel medio">Médio</span>
+        <h3>3. O pêndulo</h3>
+        <p>
+          A esfera de um pêndulo é solta do repouso no ponto A, que está 0,45 m acima do ponto
+          mais baixo B. Desprezando o atrito, qual é a velocidade da esfera ao passar por B?
+        </p>
+        <details>
+          <summary>Ver resolução</summary>
+          <p>
+            Pela conservação da energia mecânica: m · g · h = m · v² / 2<br>
+            v = √(2 · g · h) = √(2 · 10 · 0,45) = √9 = <strong>3 m/s</strong>.
+          </p>
+        </details>
+      </div>
+
+      <div class="cartao questao">
+        <span class="nivel medio">Médio</span>
+        <h3>4. Potência de um atleta</h3>
+        <p>
+          Um atleta de 60 kg sobe uma escadaria de 15 m de altura em 20 s. Qual é a potência
+          média desenvolvida por ele para vencer a gravidade?
+        </p>
+        <details>
+          <summary>Ver resolução</summary>
+          <p>
+            τ = m · g · h = 60 · 10 · 15 = 9 000 J<br>
+            P = τ / Δt = 9 000 / 20 = <strong>450 W</strong>.
+          </p>
+        </details>
+      </div>
+
+      <div class="cartao questao">
+        <span class="nivel medio">Médio</span>
+        <h3>5. Conta de luz</h3>
+        <p>
+          Um chuveiro de 4 400 W é usado 15 minutos por dia. Quantos kWh ele consome em 30 dias?
+          Se a tarifa for R$ 0,80 por kWh, quanto custa esse consumo?
+        </p>
+        <details>
+          <summary>Ver resolução</summary>
+          <p>
+            Por dia: E = 4,4 kW · 0,25 h = 1,1 kWh<br>
+            No mês: 1,1 · 30 = <strong>33 kWh</strong><br>
+            Custo: 33 · 0,80 = <strong>R$ 26,40</strong>.
+          </p>
+        </details>
+      </div>
+
+      <div class="cartao questao">
+        <span class="nivel dificil">Difícil</span>
+        <h3>6. Rendimento de uma bomba d'água</h3>
+        <p>
+          Uma bomba eleva 600 kg de água a uma caixa d'água 10 m acima do solo em 2 minutos.
+          Ela consome 1 000 W da rede elétrica. Qual é o rendimento da bomba?
+        </p>
+        <details>
+          <summary>Ver resolução</summary>
+          <p>
+            Trabalho útil: τ = m · g · h = 600 · 10 · 10 = 60 000 J<br>
+            Tempo: 2 min = 120 s → P<sub>útil</sub> = 60 000 / 120 = 500 W<br>
+            η = P<sub>útil</sub> / P<sub>total</sub> = 500 / 1 000 = <strong>0,5 = 50%</strong>.
+          </p>
+        </details>
+      </div>
+
+      <div class="cartao questao">
+        <span class="nivel dificil">Difícil</span>
+        <h3>7. Dobrando a velocidade</h3>
+        <ol type="a">
+          <li>Se a velocidade de um carro passa de 36 km/h para 72 km/h, por quanto fica multiplicada a sua energia cinética?</li>
+          <li>Por que isso aumenta tanto a distância necessária para frear?</li>
+        </ol>
+        <details>
+          <summary>Ver resolução</summary>
+          <p>
+            a) A velocidade dobra (10 m/s → 20 m/s). Como E<sub>c</sub> depende de v², a energia
+            fica <strong>4 vezes maior</strong>.<br>
+            b) Os freios precisam dissipar toda essa energia pelo trabalho da força de atrito
+            (τ = F · d). Com a mesma força de frenagem, 4 vezes mais energia exige uma distância
+            cerca de <strong>4 vezes maior</strong>.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <section>
+      <h2>Resumo das fórmulas</h2>
+      <div class="grade">
+        <div class="cartao"><h3>Energia cinética</h3><span class="formula">E<sub>c</sub> = m · v² / 2</span></div>
+        <div class="cartao"><h3>Potencial gravitacional</h3><span class="formula">E<sub>pg</sub> = m · g · h</span></div>
+        <div class="cartao"><h3>Trabalho</h3><span class="formula">τ = F · d · cos θ</span></div>
+        <div class="cartao"><h3>Potência</h3><span class="formula">P = E / Δt</span></div>
+        <div class="cartao"><h3>Rendimento</h3><span class="formula">η = P<sub>útil</sub> / P<sub>total</sub></span></div>
+      </div>
+    </section>
+
+    <div class="proxima">
+      <a class="botao secundario" href="potencia.html">← Potência</a>
+      <a class="botao" href="index.html">Voltar ao início ↺</a>
+    </div>
+
+  </main>
+
+  <footer class="rodape">
+    <p>Projeto Prático — Web Design e Multimídia · 1º ano do Ensino Médio</p>
+    <p>Disciplina de referência: Física — Energia e Potência · Grupo: Matheus Y. Lunelli e Igor A. Fumagalli</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" font-family="Segoe UI, Arial, sans-serif">
+  <title>Montanha-russa: troca entre energia potencial e cinética</title>
+  <rect width="600" height="340" rx="16" fill="#fff7e6"/>
+  <rect x="0" y="300" width="600" height="40" fill="#e9c46a"/>
+  <!-- suportes -->
+  <g stroke="#b08968" stroke-width="4">
+    <line x1="60" y1="92" x2="60" y2="300"/>
+    <line x1="160" y1="160" x2="160" y2="300"/>
+    <line x1="360" y1="190" x2="360" y2="300"/>
+    <line x1="450" y1="160" x2="450" y2="300"/>
+    <line x1="540" y1="230" x2="540" y2="300"/>
+  </g>
+  <!-- trilho -->
+  <path id="trilho" d="M20,90 C110,90 150,262 260,262 S 400,150 450,160 S 540,232 590,232" fill="none" stroke="#14213d" stroke-width="7" stroke-linecap="round"/>
+  <!-- altura h -->
+  <line x1="30" y1="90" x2="30" y2="262" stroke="#e76f51" stroke-width="2" stroke-dasharray="6 5"/>
+  <line x1="22" y1="262" x2="250" y2="262" stroke="#e76f51" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="38" y="185" fill="#e76f51" font-size="20" font-style="italic" font-weight="700">h</text>
+  <!-- marcadores dos pontos A e B -->
+  <circle cx="20" cy="90" r="7" fill="#e76f51" stroke="#fff" stroke-width="2"/>
+  <circle cx="260" cy="262" r="7" fill="#2a9d8f" stroke="#fff" stroke-width="2"/>
+  <!-- carrinho em movimento: devagar no alto, rápido no vale -->
+  <g>
+    <rect x="-22" y="-32" width="44" height="24" rx="6" fill="#e76f51"/>
+    <circle cx="-12" cy="-6" r="6" fill="#14213d"/>
+    <circle cx="12" cy="-6" r="6" fill="#14213d"/>
+    <animateMotion dur="6s" repeatCount="indefinite" rotate="auto"
+      keyPoints="0;0.4;0.66;1" keyTimes="0;0.45;0.72;1" calcMode="spline"
+      keySplines="0.6 0 0.9 1; 0.1 0 0.5 1; 0.5 0 0.9 1">
+      <mpath href="#trilho"/>
+    </animateMotion>
+  </g>
+  <!-- rótulos -->
+  <text x="100" y="40" fill="#e76f51" font-size="15" font-weight="700">A: Ep máxima, Ec ≈ 0</text>
+  <text x="180" y="296" fill="#2a9d8f" font-size="15" font-weight="700">B: Ec máxima, Ep mínima</text>
+  <!-- barras de energia em A e B -->
+  <g transform="translate(420,24)">
+    <rect width="160" height="104" rx="10" fill="#ffffff" stroke="#dde2ec"/>
+    <text x="12" y="20" fill="#14213d" font-size="12" font-weight="700">Energia mecânica = constante</text>
+    <text x="16" y="44" fill="#14213d" font-size="12">A</text>
+    <rect x="34" y="34" width="110" height="14" fill="#e76f51"/>
+    <text x="16" y="72" fill="#14213d" font-size="12">B</text>
+    <rect x="34" y="62" width="20" height="14" fill="#e76f51"/>
+    <rect x="54" y="62" width="90" height="14" fill="#2a9d8f"/>
+    <rect x="34" y="86" width="10" height="10" fill="#e76f51"/>
+    <text x="48" y="95" fill="#14213d" font-size="11">Ep</text>
+    <rect x="80" y="86" width="10" height="10" fill="#2a9d8f"/>
+    <text x="94" y="95" fill="#14213d" font-size="11">Ec</text>
+  </g>
+</svg>

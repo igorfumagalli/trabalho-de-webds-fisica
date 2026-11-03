@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" font-family="Segoe UI, Arial, sans-serif">
+  <title>Lâmpadas com potências diferentes</title>
+  <style>
+    .raios-fracos { animation: brilho-fraco 2.4s ease-in-out infinite; }
+    .bulbo-fraco { animation: bulbo-fraco 2.4s ease-in-out infinite; }
+    .raios-fortes { animation: brilho-forte 1.2s ease-in-out infinite; }
+    .halo { transform-box: view-box; transform-origin: 380px 140px; animation: halo 1.2s ease-in-out infinite; }
+    .formula { animation: aparecer 2.4s ease-in-out infinite; }
+    @keyframes brilho-fraco { 0%, 100% { opacity: 0.25; } 50% { opacity: 0.6; } }
+    @keyframes bulbo-fraco { 0%, 100% { opacity: 0.55; } 50% { opacity: 0.8; } }
+    @keyframes brilho-forte { 0%, 100% { opacity: 0.6; stroke-width: 6px; } 50% { opacity: 1; stroke-width: 10px; } }
+    @keyframes halo { 0%, 100% { opacity: 0.15; transform: scale(1); } 50% { opacity: 0.4; transform: scale(1.25); } }
+    @keyframes aparecer { 0%, 100% { opacity: 0.75; } 50% { opacity: 1; } }
+  </style>
+  <rect width="520" height="360" rx="16" fill="#14213d"/>
+  <!-- lâmpada 1: 9 W (LED) — brilho suave e lento -->
+  <g transform="translate(140,150)">
+    <g class="raios-fracos" stroke="#fca311" stroke-width="4" stroke-linecap="round">
+      <line x1="0" y1="-95" x2="0" y2="-80"/>
+      <line x1="-70" y1="-60" x2="-58" y2="-50"/>
+      <line x1="70" y1="-60" x2="58" y2="-50"/>
+      <line x1="-90" y1="0" x2="-75" y2="0"/>
+      <line x1="90" y1="0" x2="75" y2="0"/>
+    </g>
+    <circle class="bulbo-fraco" cx="0" cy="-10" r="55" fill="#ffe8b8"/>
+    <path d="M-22,40 L22,40 L18,62 L-18,62 Z" fill="#94a3b8"/>
+    <rect x="-16" y="62" width="32" height="14" rx="3" fill="#64748b"/>
+    <text x="0" y="0" fill="#14213d" font-size="26" font-weight="800" text-anchor="middle">9 W</text>
+    <text x="0" y="110" fill="#ffffff" font-size="15" text-anchor="middle">9 J a cada segundo</text>
+  </g>
+  <!-- lâmpada 2: 60 W — brilho forte e rápido -->
+  <circle class="halo" cx="380" cy="140" r="80" fill="#fca311"/>
+  <g transform="translate(380,150)">
+    <g class="raios-fortes" stroke="#fca311" stroke-width="6" stroke-linecap="round">
+      <line x1="0" y1="-115" x2="0" y2="-85"/>
+      <line x1="-85" y1="-75" x2="-63" y2="-55"/>
+      <line x1="85" y1="-75" x2="63" y2="-55"/>
+      <line x1="-110" y1="0" x2="-80" y2="0"/>
+      <line x1="110" y1="0" x2="80" y2="0"/>
+    </g>
+    <circle cx="0" cy="-10" r="60" fill="#fca311"/>
+    <path d="M-24,44 L24,44 L20,66 L-20,66 Z" fill="#94a3b8"/>
+    <rect x="-18" y="66" width="36" height="14" rx="3" fill="#64748b"/>
+    <text x="0" y="0" fill="#14213d" font-size="28" font-weight="800" text-anchor="middle">60 W</text>
+    <text x="0" y="110" fill="#ffffff" font-size="15" text-anchor="middle">60 J a cada segundo</text>
+  </g>
+  <text class="formula" x="260" y="335" fill="#fca311" font-size="20" font-weight="700" text-anchor="middle">P = E / Δt</text>
+</svg>
